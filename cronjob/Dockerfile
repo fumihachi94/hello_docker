@@ -7,5 +7,4 @@ COPY task.sh /usr/local/bin/
 COPY cron-example /etc/cron.d/
 RUN chmod 0644 /etc/cron.d/cron-example
 
-# logのリアルタイム表示
 CMD ["cron", "-f"]

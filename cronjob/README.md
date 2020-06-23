@@ -11,7 +11,7 @@
 # Dockerイメージのビルド 
 $ docker image build -t sample/cronjob:latest .
 
-# イメージの確認
+# イメージの実行
 $ docker container run -d --rm --name cronjob sample/cronjob:latest
 ```
 
@@ -26,7 +26,13 @@ $ docker container exec -it cronjob tail -f /var/log/cron.log
 10s毎に実行する場合
 
 ```
-* * * * *   root    for i in `seq 0 10 59`;do (sleep ${i}; sh /usr/local/bin/task.sh ) & done;
+* * * * *         root  for i in `seq 0 10 59`;do (sleep ${i}; sh /usr/local/bin/task.sh ) & done;
+```
+
+1分毎に実行する場合
+
+```
+* * * * *         root  sh /usr/local/bin/task.sh 
 ```
 
 # コンテナにアクセス

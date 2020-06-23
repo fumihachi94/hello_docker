@@ -1,1 +1,1 @@
-* * * * *   root    sh /usr/local/bin/task.sh
+* * * * *         root  for i in `seq 0 10 59`;do (sleep ${i}; sh /usr/local/bin/task.sh ) & done;

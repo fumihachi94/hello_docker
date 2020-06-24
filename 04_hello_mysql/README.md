@@ -2,13 +2,13 @@
 
 MySQLのデータをData Volumeコンテナに保持するデモ。
 
-### Build Docker image
+### 1. Build Docker image
 
 ```
 $ docker image build -t sample/mysql-data:latest .
 ```
 
-### Run Data Volume Container
+### 2. Run Data Volume Container
 
 ```
 $ docker container run -d --name mysql-data sample/mysql-data:latest
@@ -16,7 +16,7 @@ $ docker container run -d --name mysql-data sample/mysql-data:latest
 
 This is run the only busybox's sh commmand, so finish immediately after execution.
 
-### Run MySQL Container
+### 3. Run MySQL Container
 
 ```
 $ docker container run -d --rm --name mysql \
@@ -62,13 +62,13 @@ mysql> select * from user;
 3 rows in set (0.00 sec)
 ```
 
-### Stop MySQL Container
+### 4. Stop MySQL Container
 
 ```sh
 $ docker container stop mysql
 ```
 
-### Run MySQL Container again
+### 5. Run MySQL Container again
 
 ```sh
 $ docker container run -d --rm --name mysql \

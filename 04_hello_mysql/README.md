@@ -1,6 +1,7 @@
 ## Data Volume Container によるデータ保持
 
 MySQLのデータをData Volumeコンテナに保持するデモ。
+※ ただし、Data Volumeコンテナは同一Docker Host内でのみ有効
 
 ### 1. Build Docker image
 

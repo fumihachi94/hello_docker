@@ -1,1 +1,3 @@
-hello_jenkins/jenkins_home
+02_hello_jenkins/jenkins_home
+05_docker_swarm/registry-data
+05_docker_swarm/stack

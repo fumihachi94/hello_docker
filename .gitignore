@@ -1,3 +1,4 @@
 02_hello_jenkins/jenkins_home
+04_hello_mysql/mysql-backup.tar.gz
 05_docker_swarm/registry-data
 05_docker_swarm/stack
